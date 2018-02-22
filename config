@@ -1,0 +1,15 @@
+#~/.ssh/config
+
+
+Host ec2*
+	IdentityFile ~/.ssh/aws_keys/bla.pem
+
+Host XXXX
+    StrictHostKeyChecking no
+    UserKnownHostsFile=/dev/null
+    HostName  XXXXXXXXXXXXXXXXXXXXX
+    User base2
+    IdentityFile ~/.ssh/id_rsa
+    ForwardAgent yes
+    AddKeysToAgent yes
+    StrictHostKeyChecking no
